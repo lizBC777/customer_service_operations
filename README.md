@@ -7,16 +7,16 @@ The data covers a range of issue types from billing disputes and refund requests
 
 ## Project Workflow
 ### 1. Dataset Columns
-1. ticket_id
-2. created_date
-3. channel
-4. issue_type
-5. agent_name
-6. status
-7. region
-8. csat_score
-9. resolution_time_mins
-10. num_interactions
+1. ticket_id - Unique ticket identifier (TKT-0001 … TKT-1000) 
+2. created_date - Date the ticket was raised (2024) 
+3. channel - Phone, Email, Live Chat, Social Media, In-Person 
+4. issue_type - Billing, Technical Support, Shipping, Refund, etc. 
+5. agent_name - Assigned support agent 
+6. status - Resolved, Pending, Escalated, Closed, Reopened 
+7. region - Kenyan city/region of the customer 
+8. csat_score - Customer satisfaction 1–5 (some NULLs) 
+9. resolution_time_mins - Minutes to resolve (NULL for unresolved tickets) 
+10. num_interactions - Number of back-and-forth contacts on the ticket 
 
 ### 2. Key Questions
 #### Q1 — New column: Satisfaction Label
